@@ -1,16 +1,16 @@
-package Test;
+package PatternDemo;
 
-public class TestProgram1 {
+public class Pattern23 {
     public static void main(String[] args) {
-        int row=5;
+        int row=9;
         int col=5;
 
         for (int i=0 ; i<row ; i++){
             for (int j=0 ; j<col ; j++){
-                if(i+j==4 || i==4 || j==4) {
-                    System.out.print("* ");
-                }else{
-                    System.out.print("  ");
+                if (i%2!=0 || j==2 ){
+                    System.out.print(" # ");
+                }else {
+                    System.out.print("   ");
                 }
             }
             System.out.println();

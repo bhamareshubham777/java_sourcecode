@@ -1,21 +1,21 @@
-package Test;
+package PatternDemo;
 
-public class TestProgram2 {
+public class Pattern26 {
     public static void main(String[] args) {
-        int row=6;
+        int row=7;
         int col=1;
-        int space=0;
+        int space=row-1;
 
         for (int i=0 ; i<row ; i++){
             for (int k=0 ; k<space ; k++){
-                System.out.print(" ");
+                System.out.print("   ");
             }
             for (int j=0 ; j<col ; j++){
-                System.out.print("*");
+                System.out.print(" * ");
             }
             System.out.println();
-            col++;
-            space++;
+            col+=2;
+            space--;
         }
     }
 }
